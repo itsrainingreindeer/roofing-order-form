@@ -1,0 +1,57 @@
+<html>
+<head>
+
+<link href="static/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+ <p>Please fill out the following information:</p>
+
+<form action="/result" method="post">
+
+ <p>Square Feet: </p>
+ <input type="text" name="sqft1" value="0">
+
+ <p>Pitch: </p>
+ <input type="text" name="pitch1" value="0">
+ <p>(Put "0" if pitch is already factored into the square footage.)</p> 
+
+ <p>Square Feet: </p>
+ <input type="text" name="sqft2" value="0">
+
+ <p>Pitch: </p>
+ <input type="text" name="pitch2" value="0">
+ <p>(Put "0" if pitch is already factored into the square footage.)</p> 
+
+ <p>Sheets of OSB: </p>
+ <input type="text" name="osb" value="0">
+
+ <p>Feet of Fascia: </p>
+ <input type="text" name="fas" value="0">
+ <p>(Put "0" if pitch is already factored into the square footage.)</p> 
+
+ <p>Roof Type:</p>
+ <input type="radio" name="hips" value="gable"><p>Gable</p>
+ <input type="radio" name="hips" value="hips"><p>Hips</p>
+ <input type="radio" name="hips" value="hipsp"><p>Hips+</p>
+
+ <p>What kind of panels will we be using?</p>
+ <input type="radio" name="mats" value="tcm"><p>TCM LOK 1</p>
+ <input type="radio" name="mats" value="five"><p>5-LOK</p>
+ <input type="radio" name="mats" value="ult"><p>ULTRA-LOK</p>
+
+ <p>What kind of underlayment will we be using?</p>
+ <input type="radio" name="under" value="rad"><p>Radiant Barrier</p>
+ <input type="radio" name="under" value="stk"><p>Peel and Stick</p>
+ <input type="radio" name="under" value="syn"><p>Synthetic</p>
+
+ <p>Is it a reroof or a roofover?</p>
+ <input type="radio" name="roof" value="reroof"><p>Reroof</p>
+ <input type="radio" name="roof" value="roofover"><p>Roofover</p>
+ 
+ <button value="Submit" type="submit"><span>Get a Quote!</span></button>
+ 
+</form>
+</body>
+</html>
